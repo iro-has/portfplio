@@ -1,7 +1,7 @@
 //１．ランダムにおみくじ画像を表示する処理
 function getRandomOmikuji() {
     const number = Math.floor (Math.random() * 7);
-    const omikujiImages = `./images/omikuji${number.toString()}.png`;
+    const omikujiImages = `./images/omikuji-images/omikuji${number.toString()}.png`;
     return omikujiImages;
 };
 
