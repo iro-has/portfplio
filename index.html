@@ -7,11 +7,22 @@
 </head>
 <body>
     <header>
-        <div class="head-content">
-            <div id="head-slide"></div>
+        <!--概要欄、クリックしたら飛べるようにする-->
+        <div class="overview">
+            <ul class="overview-list">
+                <li><a href="#profile">自己紹介</a></li>
+                <li><a href="#workIntoroduction">作品紹介</a></li>
+                <li><a href="#skill">スキル</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </div>
+        <!--訪問してすぐのページ、スライドできりかわるようにする。-->
+        <div class="header-content">
+            <div id="header-slide"></div>
             <h1>Thank you coming my page !</h1>
         </div>
-        <div class="pageview">
+        <!--もう少し小さくしたい-->
+        <div class="header-bottom">
             <div class="omikuji">
                 <h2 class="omikuji-headline">今日の運勢は？</h2>
                 <div class="omikuji-result">
@@ -19,18 +30,9 @@
                 </div>
                 <button type="button" class="omikuji-button" id="js-button">おみくじを引く</button>
             </div>
-            <div class="overview">
-                <h3>ページ概要</h3>
-                <div class="overview-list">
-                    <ul>
-                        <li><a href="#profile">自己紹介</a></li>
-                        <li><a href="#workIntoroduction">作品紹介</a></li>
-                        <li><a href="#skill">スキル</a></li>
-                        <li><a href="#contact">連絡先</a></li>
-                    </ul>
-                </div>    
-            </div>
         </div>
+        
+            
     </header>
 
     <section id="profile">
@@ -53,6 +55,14 @@
             <li>プロジェクトC - データ分析ツール作成</li>
         </ul>
     </section>
+
+    <section id="skill">
+        <h2>スキルセット</h2>
+        <ul>
+            <li>プログラミング言語: HTML, CSS, JavaScript, Python</li>
+            <li>フレームワーク: React, Django</li>
+            <li>ツール: Git, Docker, AWS</li>
+        </ul>
 
     <section id="contact">
         <h2>お問い合わせ</h2>
