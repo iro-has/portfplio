@@ -5,43 +5,43 @@ const omikujiData = [
         img: './images/omikuji-images/omikuji0.png',
         message: '🎉 大吉！最高の一日になるでしょう！',
         advice: '今日は新しいことに挑戦してみましょう！',
-        item: '四つ葉のクローバー'
+        item: '四つ葉のクローバー🍀'
     },
     { 
         img: './images/omikuji-images/omikuji1.png',
         message: '😊 中吉。努力が実を結ぶ日になるでしょう。',
         advice: '計画を立てて行動すると良い結果が得られます。',
-        item: '青いペン'
+        item: '青いボールペン🖊️'
     },
     { 
         img: './images/omikuji-images/omikuji2.png', 
         message: '🙂 小吉。落ち着いて行動しましょう。',
-        advice: '焦らず、一歩一歩進むことが大切です。',
-        item: 'シンプルなノート'
+        advice: '焦らず、一歩一歩進めるのが無難です。',
+        item: 'お気に入りのノート📒'
     },
     { 
         img: './images/omikuji-images/omikuji3.png', 
         message: '😌 吉。安定した一日になるでしょう。',
-        advice: '周囲の人とのコミュニケーションを大切に。',
-        item: 'お気に入りのマグカップ'
+        advice: '周囲の人との会話を大切にしましょう。',
+        item: '温かいコーヒー☕'
     },
     { 
         img: './images/omikuji-images/omikuji4.png', 
         message: '😅 末吉。小さな幸せがあるでしょう。',
-        advice: '日常の中で感謝の気持ちを忘れずに。',
-        item: '香りの良いハンドクリーム'
+        advice: '感謝の気持ちを忘れずに過ごしましょう。',
+        item: 'イチゴのショートケーキ🍰'
     },
     { 
         img: './images/omikuji-images/omikuji5.png', 
         message: '⚠️ 凶。無理は禁物、焦らず行動しましょう。',
         advice: '休息を取り、リフレッシュする時間を持ちましょう。',
-        item: 'リラックスできる音楽'
+        item: 'お気に入りの音楽🎧'
     },
     { 
         img: './images/omikuji-images/omikuji6.png', 
         message: '💀 大凶…。慎重に行動しましょう。',
         advice: '重要な決断は避け、周囲の意見を聞くことが大切です。',
-        item: '守り神のストラップ'
+        item: 'ピカピカの革靴👞'
     }
 ];
 
