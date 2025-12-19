@@ -155,3 +155,87 @@ header h1 {
     border: double 5px #000000;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+.workIntoroduction {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.skills {
+  padding: 40px 0;
+  text-align: center;
+}
+.skill-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* 画面が狭い時は折り返し */
+  justify-content: center;
+}
+.skill-item {
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.contact {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-text {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+input,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.submit-btn {
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  opacity: 0.85;
+}

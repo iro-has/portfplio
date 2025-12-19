@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./apsets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>田中隼翔のポートフォリオ</title>
 </head>
 <body>
@@ -36,9 +37,7 @@
                 <p id="js-advice" class="omikuji-sub fade"></p>
                 <p id="js-item" class="omikuji-sub fade"></p>
             </div>
-        </div>
-        
-            
+        </div>      
     </header>
 
     <div class ="profile">
@@ -51,6 +50,7 @@
             <p>趣味(hobby) : バレーボール (volleyball)</p>
         </div>
     </div>
+
     <!--作品のURLを貼る。-->
     <div class="workIntoroduction">
         <h2>～プロジェクト～</h2>
@@ -58,18 +58,71 @@
         <p>プロジェクトB - モバイルアプリ開発</p>
         <p>プロジェクトC - データ分析ツール作成</p>
     </div>
+
     <!--スキルセットを貼る。アイコンを持ってくる。-->
-    <div class="skill">
+    <div class="skills">
         <h2>～スキルセット～</h2>
-        <p>プログラミング言語: HTML, CSS, JavaScript, Python</p>
-        <p>フレームワーク: React, Django</p>
-        <p>ツール: Git, Docker, AWS</p>
+        <div class="skill-items">
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <p class="skill-name">HTML</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="skill-name">CSS</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <p class="skill-name">JavaScript</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-github"></i>
+                <p class="skill-name">GitHub</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-wordpress"></i>
+                <p class="skill-name">WordPress</p>
+            </div>
+
+        </div>
     </div>
+
     <!--お問い合わせフォームの作成。-->
     <div class="contact">
         <h2>お問い合わせ</h2>
         <p>ご質問やご依頼がございましたら、以下のメールアドレスまでご連絡ください。</p>
         <p>Email:tnk.shunnto@gmail.com</p>
+    <section class="contact-container" id="contact">
+        <h2>Contact</h2>
+        <p class="contact-text">
+            お問い合わせは下記フォームよりお願いいたします。<br>
+            ※現在学習中のため、返信にお時間をいただく場合があります。
+        </p>
+
+        <form class="contact-form">
+            <div class="form-item">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" placeholder="例：田中 太郎" required>
+            </div>
+
+            <div class="form-item">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-item">
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">送信する</button>
+        </form>
+    </section>
+
     </div>    
     <script src="./apsets/js/animation.js" defer></script>
     <script src="./apsets/js/omikuzi.js" defer></script>
