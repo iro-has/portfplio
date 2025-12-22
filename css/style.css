@@ -1,0 +1,241 @@
+html {
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #edfaff;
+}
+header {
+    margin: 0;
+}
+.overview {
+    background-color: #8fd8fb;
+    border: double 3px #061af8;
+    text-align: center;
+    padding: 0px 20%;
+}
+.overview-list {
+    list-style: none;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.overview-list a{
+    color: #000000;
+    text-decoration: none;       
+}
+.overview-list a:hover {
+    color: #00c3ff;
+    text-decoration: underline;
+}
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    padding: 500px auto;
+}
+#header-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    transition: background-image 1.5s ease-in-out;
+}
+header h1 {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    color: #8fd8fb;
+    font-size: 5rem;
+    padding: auto;
+    margin-top: 200px;
+}
+.header-bottom {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+    background-image: url(/images/background-images/S__58540038_0.jpg);
+}
+.omikuji-obj {
+    text-align: center;
+    padding: 10px 50px;
+    font-size: 0.7em;
+    margin: 10px 10%;
+    border: double 15px #fe0000;
+    height: auto;
+    width: 400px;
+    background-color: #fff0f5;
+}
+.omikuji-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.omikuji-headline {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #fe0000;
+    color: #fff;
+    padding: 10px;
+    font-family: "Yu Mincho", "serif";
+    font-weight: 400;
+    border: double 5px #fff;
+}
+.omikuji-result {
+    width: 100%;
+    height: 400px;
+}
+.omikuji-button {
+    background-color: #ff0000;
+    color: #fff;
+    font-style: "Yu Mincho", "serif";
+    font-weight: 400;
+    width: 90%;
+    border: double 5px #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.fade.is-show {
+    opacity: 1;
+}
+.omikuji-text {
+    font-weight: bold;
+    margin-top: 80px;
+    width: 300px;
+    height: 400px;
+    padding: 30px 50px;
+    border: double 5px #ff0000;
+    background-color: #fff0f5;
+    font-size: 1.2em;
+}
+.omikuji-sub {
+    font-size: 0.85em;
+    margin-top: 4px;
+    min-height: 2.5em;
+}
+.message {
+    font-size: 1.5em;
+    margin-top: 10px;
+    min-height: 2.5em;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    gap: 30px;
+    flex-direction: row-reverse;
+    max-width: 900px;
+    padding-right: 50px;
+}
+.profile-text {
+    font-size: 1.2em;
+    text-align: left;
+}
+.photo {
+    width: 400px;
+    height: 450px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: double 5px #000000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.workIntoroduction {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.skills {
+  padding: 40px 0;
+  text-align: center;
+}
+.skill-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* 画面が狭い時は折り返し */
+  justify-content: center;
+}
+.skill-item {
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.contact {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-text {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+input,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.submit-btn {
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  opacity: 0.85;
+}

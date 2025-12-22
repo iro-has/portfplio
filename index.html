@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>田中隼翔のポートフォリオ</title>
+</head>
+<body>
+    <header>
+        <!--概要欄、クリックしたら飛べるようにする-->
+        <div class="overview">
+            <ul class="overview-list">
+                <li><a href="#profile">自己紹介</a></li>
+                <li><a href="#workIntoroduction">作品紹介</a></li>
+                <li><a href="#skill">スキル</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </div>
+        <!--訪問してすぐのページ、スライドできりかわるようにする。-->
+        <div class="header-content">
+            <div id="header-slide"></div>
+            <h1>Thank you coming my page !</h1>
+        </div>
+        <!--もう少し小さくしたい-->
+        <div class="header-bottom">
+            <div class="omikuji-obj">
+                <h2 class="omikuji-headline">今日の運試し</h2>
+                <div class="omikuji-result">
+                    <img  id="js-result" src="./images/omikuji-images/omikujiObject.png" alt="おみくじ">
+                </div>
+                <button type="button" class="omikuji-button" id="js-button">おみくじを引く</button>
+            </div>
+            <div class="omikuji-text">
+                <h2>今日の運勢は？</h2>
+                <p id="js-message" class="message fade"></p>
+                <p id="js-advice" class="omikuji-sub fade"></p>
+                <p id="js-item" class="omikuji-sub fade"></p>
+            </div>
+        </div>      
+    </header>
+
+    <div class ="profile">
+        <img src="./images/background-images/S__58540047_0.jpg" alt="プロフィール写真" class="photo">
+        <div class="profile-text">
+            <h2>～自己紹介(profile)～</h2>
+            <p>名前(name) : 田中 隼翔 (Shunto Tnaka)</p>
+            <p>生年月日(birthday) : 2001.08.01</p>
+            <p>出身地(hometown) : 広島県三次市 (Hiroshima,Miyoshi)</p>
+            <p>趣味(hobby) : バレーボール (volleyball)</p>
+        </div>
+    </div>
+
+    <!--作品のURLを貼る。-->
+    <div class="workIntoroduction">
+        <h2>～プロジェクト～</h2>
+        <p>プロジェクトA - ウェブアプリケーション開発</p>
+        <p>プロジェクトB - モバイルアプリ開発</p>
+        <p>プロジェクトC - データ分析ツール作成</p>
+    </div>
+
+    <!--スキルセットを貼る。アイコンを持ってくる。-->
+    <div class="skills">
+        <h2>～スキルセット～</h2>
+        <div class="skill-items">
+            <div class="skill-item">
+                <i class="fa-brands fa-html5"></i>
+                <p class="skill-name">HTML</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="skill-name">CSS</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-js"></i>
+                <p class="skill-name">JavaScript</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-github"></i>
+                <p class="skill-name">GitHub</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fa-brands fa-wordpress"></i>
+                <p class="skill-name">WordPress</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--お問い合わせフォームの作成。-->
+    <div class="contact">
+        <h2>お問い合わせ</h2>
+        <p>ご質問やご依頼がございましたら、以下のメールアドレスまでご連絡ください。</p>
+        <p>Email:tnk.shunnto@gmail.com</p>
+    <section class="contact-container" id="contact">
+        <h2>Contact</h2>
+        <p class="contact-text">
+            お問い合わせは下記フォームよりお願いいたします。<br>
+            ※現在学習中のため、返信にお時間をいただく場合があります。
+        </p>
+
+        <form class="contact-form">
+            <div class="form-item">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" placeholder="例：田中 太郎" required>
+            </div>
+
+            <div class="form-item">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-item">
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">送信する</button>
+        </form>
+    </section>
+
+    </div>    
+    <script src="./js/animation.js" defer></script>
+    <script src="./js/omikuzi.js" defer></script>
+</body>
+</html>
